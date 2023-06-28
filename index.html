@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CloudStaff Survey Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      height: 100px;
+    }
+
+    .form-submit {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-submit:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cloudstaff Survey Form</h1>
+
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+        <label class="form-label" for="name">Employee's Name:</label>
+        <input class="form-input" type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="name">Name:</label>
+        <input class="form-input" type="text" id="name" name="name" required>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="age">Age:</label>
+        <input class="form-input" type="text" id="age" name="age" required>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label">How long do you know this person?</label>
+        <div class="form-radio">
+          <input type="radio" id="recently" name="relationship-duration" value="recently" required>
+          <label for="recently">Recently</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="1-2years" name="relationship-duration" value="1-2 years" required>
+          <label for="1-2years">1-2 years</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="3-5years" name="relationship-duration" value="3-5 years" required>
+          <label for="3-5years">3-5 years</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="5+years" name="relationship-duration" value="5+ years" required>
+          <label for="5+years">5+ years</label>
+        </div>
+	  
+	   <div class="form-group">
+        <label class="form-label">Do you have a relationship with this person?</label>
+        <div class="form-radio">
+          <input type="radio" id="yes" name="relationship" value="yes" required>
+          <label for="yes">Yes</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="no" name="relationship" value="no" required>
+          <label for="no">No</label>
+        </div>
+	  
+	  <div class="form-group">
+        <label class="form-label">What type of relationship do you have with this person?</label>
+        <div class="form-radio">
+          <input type="radio" id="family" name="relationship" value="family" required>
+          <label for="family">Family</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="friends" name="relationship" value="friends" required>
+          <label for="friends">Friends</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="partner" name="relationship" value="partner" required>
+          <label for="partner">Partner</label>
+        </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message">Where did you meet each other?:</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="message">If you were to describe your relationship as a movie genre, what would it be and why?:</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="message">What's the silliest argument you've ever had with this person?:</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label">Do you have plans in the future with this person?</label>
+        <div class="form-radio">
+          <input type="radio" id="yes" name="future-plans" value="yes" required>
+          <label for="yes">Yes</label>
+        </div>
+        <div class="form-radio">
+          <input type="radio" id="no" name="future-plans" value="no" required>
+          <label for="no">No</label>
+        </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="message">If YES please Specify that "plans" you have with this person:</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="message">"If you could imagine a perfect moment that captures the essence of the relationship, what would it be?":</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  <div class="form-group">
+        <label class="form-label" for="message">"What are your thoughts on taking the relationship to the next level and embarking on an exciting lifelong adventure together?":</label>
+        <textarea class="form-textarea" id="message" name="message" required></textarea>
+      </div>
+	  
+	  
+      <div class="form-container">
+    <form>
+      <div class="form-group">
+        <a href="ehe.html" class="form-submit">Submit</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
